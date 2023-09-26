@@ -1,0 +1,99 @@
+body {
+    background-color: antiquewhite;
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 200px 100px 200px;
+}
+
+@media (min-width: 768px) {
+    img {
+        height: 400px;
+        margin-left: 170px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .right-side {
+        width: 200px;
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 400px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+     }
+     button{
+        padding: 10px 45px 10px 45px;
+        width: 200px;
+        border-radius: 10px;
+        background-color:#3C826A ;
+        border: none;
+        color: white;
+    }
+}
+
+p, h5 {
+    color: rgb(115, 115, 115);
+    font-size: 15px;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    align-items: center;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+h2, .strike {
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 100px 10px;
+        max-width: 35rem;
+    }
+    img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        max-width: 100%;
+        display: block;
+    }
+
+    .right-side {
+        max-width: 100%;
+        background-color: white;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        font-size: .78rem;
+     }
+
+     button{
+        padding: 15px 55px 15px 55px;
+        width: 330px;
+        border-radius: 10px;
+        background-color:#3C826A ;
+        border: none;
+        color: cornsilk;
+        font-size: .78rem;
+        font-weight: 700;
+    }
+
+    .main-price {
+        color: #3C826A;
+        font-size: 1.5rem;
+    }
+}
