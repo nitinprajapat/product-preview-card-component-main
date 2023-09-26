@@ -21,7 +21,10 @@
   <div class="container">
     <div class="left-side">
       <div>
-        <img src="./images/image-product-desktop.jpg">
+        <picture class="product-img-side">
+          <source srcset="images/image-product-mobile.jpg" media="(max-width: 760px)">
+          <img src="images/image-product-desktop.jpg" aria-hidden="true" alt="Perfume">
+        </picture>
       </div>
     </div>
     <div class="right-side">
